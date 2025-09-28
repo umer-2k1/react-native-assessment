@@ -1,6 +1,5 @@
   
-import { List } from '@/components/List';
-import { UserModal } from '@/components/Modal';
+import { PathWay } from '@/components/crosspath';
 import { SafeAreaView, StyleSheet } from 'react-native';
 import { Provider } from 'react-redux';
 import { store } from '../../redux/store';
@@ -9,9 +8,7 @@ export default function HomeScreen() {
   return (
   <Provider store={store}>
       <SafeAreaView style={{ flex: 1, paddingTop: 40 }}>
-        
-        <List />
-        <UserModal />
+       <PathWay/>
       </SafeAreaView>
     </Provider>
   );
